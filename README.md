@@ -342,7 +342,7 @@ would’ve done with the Gigahub.
 
 The custom firmware will default to untagging the Internet VLAN for PPPoE.
 
-If you still wish to have the Internet Service VLAN tagged to 35, check the djGrrr’s docs on Github ([link](https://github.com/djGrrr/8311-xgspon-bypass/tree/master))
+If you still wish to have the Internet Service VLAN tagged to 35, check the djGrrr’s docs on Github ([link](https://github.com/djGrrr/8311-was-110-firmware-builder))
 
 ## No WAS-110 link to Switch with Custom Firmware and Fibre Disconnected
 
