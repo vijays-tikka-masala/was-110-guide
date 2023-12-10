@@ -19,7 +19,7 @@
 - [Upgrading the WAS-110 to Custom Firmware](#upgrading-the-was-110-to-custom-firmware)
 - [Fibre Connectivity to WAS-110](#fibre-connectivity-to-was-110)
 - [PPPoE via the WAS-110](#pppoe-via-the-was-110)
-- [Frequently Asked Question (FAQ)](#frequently-asked-question-faq)
+- [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
   - [Internet VLAN - Untagged vs Tagged VLAN](#internet-vlan---untagged-vs-tagged-vlan)
   - [No WAS-110 link to Switch with Custom Firmware and Fibre Disconnected](#no-was-110-link-to-switch-with-custom-firmware-and-fibre-disconnected)
   - [Downloading the Custom Firmware](#downloading-the-custom-firmware)
@@ -347,7 +347,7 @@ If you're on a Bell 3.0gbps plan or above, you're on VEIP.
 Using your choice of router (i.e. OPNSense, PFSense, Ubiquiti Dream Machine, etc.), setup PPPoE (b1id/password) like you normally
 would’ve done with the Gigahub.
 
-# Frequently Asked Question (FAQ)
+# Frequently Asked Questions (FAQ)
 
 ## Internet VLAN - Untagged vs Tagged VLAN
 
