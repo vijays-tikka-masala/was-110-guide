@@ -181,7 +181,7 @@ If you don’t have a switch or the switch is not linking with your WAS-110, a m
     <img src="./doc-assets/images/was-110-access-web-ui-ssh.png" alt="WAS-110 Access Web UI SSH" width="50%"/>
    </a>
 
-4. Start up a terminal and SSH into the WAS-110 with login `root` and password `QpZm@4246#`:
+4. Start up a terminal and SSH into the WAS-110 with login `root` and password `QpZm@4246#5753`:
 
    - Linux
      - `ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa root@192.168.11.1`
@@ -210,37 +210,83 @@ $VOLID)"; i=$((i+1)); done
     <img src="./doc-assets/images/was-110-checking-for-issues.png" alt="WAS-110 Checking for Issues" width="50%"/>
 </a>
 
-If you run into issues, seek support from the 8311 Discord community ([link](https://discord.com/servers/8311-886329492438671420)).
+If you run into issues, seek support from the 8311 Discord community ([link](https://discord.com/channels/886329492438671420/1173846818535247904/1173846818535247904)).
+
+If you're on a Bell 3.0gbps plan or above, you're on VEIP.
 
 # Setting WAS-110 Firmware Variables
+
+## PPTP or VEIP
+
+You need to know if you're on PPTP or VEIP. Check up-n-atom's guide on Discord ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692)).
+
+## Applying the Variables
 
 1. Ensure no issues are coming up with the WAS-110 (see [here](#checking-for-was-110-issues))
 2. Issue the following commands while SSHed into the WAS-110 (replace your DM## , SMB##, and SGC## where applicable:
 
    ```shell
+   # mib_file
    fw_setenv mib_file
    fw_setenv mib_file
+
+   # 8311_device_sn
+   # Replace DM############# with your DM## value from the back of your modem
    fw_setenv 8311_device_sn DM#############
    fw_setenv 8311_device_sn DM#############
+
+   # 8311_gpon_sn
+   # Replace SMB######### with your SMB## value from the back of your modem
    fw_setenv 8311_gpon_sn SMB#########
    fw_setenv 8311_gpon_sn SMB#########
-   fw_setenv 8311_equipment_id 5690
-   fw_setenv 8311_equipment_id 5690
-   fw_setenv 8311_hw_ver Fast5689EBell
-   fw_setenv 8311_hw_ver Fast5689EBell
+
+   # 8311_equipment_id
+   # Replace 56## with the corresponding id for your modem
+   #    5689 is for the Home Hub 4000
+   #    5690 is for the Giga Hub
+   fw_setenv 8311_equipment_id 56##
+   fw_setenv 8311_equipment_id 56##
+
+   # 8311_hw_ver
+   # Replace Fast56####### with the corresponding hardware version for your modem
+   #   Fast5689Bell  is for the Home Hub 4000
+   #   Fast5689EBell is for the Giga Hub
+   fw_setenv 8311_hw_ver Fast56#######
+   fw_setenv 8311_hw_ver Fast56#######
+
+   # 8311_reg_id_hex
    fw_setenv 8311_reg_id_hex 00
    fw_setenv 8311_reg_id_hex 00
+
+   # 8311_sw_verA
+   # Replace SGC####### with your SGC## value from the back of your modem
    fw_setenv 8311_sw_verA SGC#######
    fw_setenv 8311_sw_verA SGC#######
+
+   # 8311_sw_verB
+   # Replace SGC####### with your SGC## value from the back of your modem
    fw_setenv 8311_sw_verB SGC#######
    fw_setenv 8311_sw_verB SGC#######
+
+   # 8311_mib_file
+   # VEIP = /etc/mibs/prx300_1V.ini (if you're on a Bell 3.0gpbs plan or above, you're on VEIP)
+   # PPTP = /etc/mibs/prx300_1U.ini (if you're on a Bell 1.5gbps plan or below, you're on either VEIP or PPTP)
+   # Check up-n-atom's guide on Discord
    fw_setenv 8311_mib_file /etc/mibs/prx300_1V.ini
    fw_setenv 8311_mib_file /etc/mibs/prx300_1V.ini
+
+   # 8311_cp_hw_ver
    fw_setenv 8311_cp_hw_ver_sync 1
    fw_setenv 8311_cp_hw_ver_sync 1
    ```
 
    Note: Duplication of the commands are intentional
+
+   Screenshot of applying the variables:
+   <!-- was-110-applying-firmware-environment-variables.png -->
+    <a href="./doc-assets/images/was-110-applying-firmware-environment-variables.png" target="_blank">
+         <img src="./doc-assets/images/was-110-applying-firmware-environment-variables.png" alt="WAS-110 Applying Firmware Environment Variables" width="50%"/>
+    </a>
 
 # Upgrading the WAS-110 to Custom Firmware
 
@@ -261,6 +307,12 @@ If you run into issues, seek support from the 8311 Discord community ([link](htt
         </a>
 
    - After the module comes back up, ensure there are no issues (see [here](#checking-for-was-110-issues))
+   - Add the failsafe file to the module to ensure we can recover it if something goes wrong:
+
+     ```shell
+     touch /ptconf/.failsafe
+     ```
+
    - Repeat the firmware upgrade from the previous step (yes, you must do this twice)
    - After the module comes back up a second time, ensure there are no issues (see [here](#checking-for-was-110-issues))
 
