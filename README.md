@@ -21,7 +21,7 @@
   - [Downloading the Custom Firmware](#downloading-the-custom-firmware)
   - [WAS-110 Group Buy](#was-110-group-buy)
 
-# Disclaimer: Liability and Not-Responsibility Notice
+# Disclaimer: Liability and No-Responsibility Notice
 
 The information provided in this guide is intended for educational and informational purposes only. Users are solely responsible for the
 application and implementation of the steps outlined in the guide. The authors, contributors, and distributors of this guide, including but not
