@@ -144,6 +144,10 @@ as:
 
 # Connecting the WAS-110
 
+## Directly into SFP NIC Method
+
+Plug the WAS-110 directly into your SFP NIC (e.g. Intel X520-DA2, Mellanox ConnectX-3, etc.) and set the host IP to 192.168.11.100/24.
+
 ## SFP Switch Method
 
 Accessing the WAS-110 via a switch is possible if you have a 10G switch ready to go.
