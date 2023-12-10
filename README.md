@@ -212,13 +212,13 @@ $VOLID)"; i=$((i+1)); done
 
 If you run into issues, seek support from the 8311 Discord community ([link](https://discord.com/channels/886329492438671420/1173846818535247904/1173846818535247904)).
 
-If you're on a Bell 3.0gbps plan or above, you're on VEIP.
-
 # Setting WAS-110 Firmware Variables
 
 ## PPTP or VEIP
 
 You need to know if you're on PPTP or VEIP. Check up-n-atom's guide on Discord ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692)).
+
+If you're on a Bell 3.0gbps plan or above, you're on VEIP.
 
 ## Applying the Variables
 
