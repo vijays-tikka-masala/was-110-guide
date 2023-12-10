@@ -329,7 +329,14 @@ If you're on a Bell 3.0gbps plan or above, you're on VEIP.
 
 1. Plug the fibre into your WAS-110
 2. In the WAS-110’s Web UI at Status → PON, ensure it shows an ONU State of O5.
-   If it’s not showing O5, your fibre isn't connected properly
+   - If it’s not showing O5, either:
+     - Your fibre isn't connected properly
+     - Your firmware variables are incorrect
+
+<!-- was-110-fibre-connectivity-webui.png -->
+<a href="./doc-assets/images/was-110-fibre-connectivity-webui.png" target="_blank">
+    <img src="./doc-assets/images/was-110-fibre-connectivity-webui.png" alt="WAS-110 Fibre Connectivity Web UI" width="50%"/>
+</a>
 
 # PPPoE via the WAS-110
 
