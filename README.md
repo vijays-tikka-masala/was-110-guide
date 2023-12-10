@@ -4,20 +4,24 @@
 
 # Table of Contents
 
-- [Disclaimer: Liability and No-Responsibility Notice](#disclaimer-liability-and-not-responsibility-notice)
+- [Disclaimer: Liability and No-Responsibility Notice](#disclaimer-liability-and-no-responsibility-notice)
 - [Credits](#credits)
 - [Manufacturers](#manufacturers)
 - [Gathering Gigahub Modem Attributes (DM#, SMB#, SGC#)](#gathering-gigahub-modem-attributes-dm-smb-sgc)
 - [Connecting the WAS-110](#connecting-the-was-110)
+  - [SFP Switch Method](#sfp-switch-method)
+  - [Media Converter Method](#media-converter-method)
 - [Accessing the WAS-110](#accessing-the-was-110)
-- [Checking for WAS-110 Issues](#checking-for-was-110-issues)
+- [Checking for WAS-110 issues](#checking-for-was-110-issues)
 - [Setting WAS-110 Firmware Variables](#setting-was-110-firmware-variables)
+  - [PPTP or VEIP](#pptp-or-veip)
+  - [Applying the Variables](#applying-the-variables)
 - [Upgrading the WAS-110 to Custom Firmware](#upgrading-the-was-110-to-custom-firmware)
 - [Fibre Connectivity to WAS-110](#fibre-connectivity-to-was-110)
 - [PPPoE via the WAS-110](#pppoe-via-the-was-110)
 - [Frequently Asked Question (FAQ)](#frequently-asked-question-faq)
   - [Internet VLAN - Untagged vs Tagged VLAN](#internet-vlan---untagged-vs-tagged-vlan)
-  - [No WAS-110 Link to Switch with Custom Firmware and Fibre Disconnected](#no-was-110-link-to-switch-with-custom-firmware-and-fibre-disconnected)
+  - [No WAS-110 link to Switch with Custom Firmware and Fibre Disconnected](#no-was-110-link-to-switch-with-custom-firmware-and-fibre-disconnected)
   - [Downloading the Custom Firmware](#downloading-the-custom-firmware)
   - [WAS-110 Group Buy](#was-110-group-buy)
 
