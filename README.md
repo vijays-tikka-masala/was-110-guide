@@ -290,7 +290,7 @@ would’ve done with the Gigahub.
 
 The custom firmware will default to untagging the Internet VLAN for PPPoE.
 
-If you still wish to have the Internet Service VLAN tagged to 35, check the djgrr’s docs on Github ([link](https://github.com/djGrrr/8311-xgspon-bypass/tree/master))
+If you still wish to have the Internet Service VLAN tagged to 35, check the djGrrr’s docs on Github ([link](https://github.com/djGrrr/8311-xgspon-bypass/tree/master))
 
 ## No WAS-110 link to Switch with Custom Firmware and Fibre Disconnected
 
@@ -306,7 +306,7 @@ The WAS-110 asserts RX_LOS which some switches (e.g. Mikrotik) monitor to establ
 
 ## Downloading the Custom Firmware
 
-The latest custom firmware by djGrr for the WAS-110 can be obtained from the 8311 Discord Community ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692)).
+The latest custom firmware by djGrrr for the WAS-110 can be obtained from the 8311 Discord Community ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692)).
 
 ## WAS-110 Group Buy
 
