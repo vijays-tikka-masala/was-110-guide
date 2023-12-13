@@ -226,8 +226,6 @@ If you run into issues, seek support from the 8311 Discord community ([link](htt
 
 You need to know if you're on PPTP or VEIP. Check up-n-atom's guide on Discord ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692)).
 
-If you're on a Bell 3.0gbps plan or above, you're on VEIP.
-
 ## Applying the Variables
 
 1. Ensure no issues are coming up with the WAS-110 (see [here](#checking-for-was-110-issues))
@@ -277,9 +275,9 @@ If you're on a Bell 3.0gbps plan or above, you're on VEIP.
    fw_setenv 8311_sw_verB SGC#######
 
    # 8311_mib_file
-   # VEIP = /etc/mibs/prx300_1V.ini (if you're on a Bell 3.0gpbs plan or above, you're on VEIP)
-   # PPTP = /etc/mibs/prx300_1U.ini (if you're on a Bell 1.5gbps plan or below, you're on either VEIP or PPTP)
-   # Check up-n-atom's guide on Discord
+   # VEIP = /etc/mibs/prx300_1V.ini
+   # PPTP = /etc/mibs/prx300_1U.ini
+   # Check up-n-atom's guide on Discord for more info on the XOM API CLI
    fw_setenv 8311_mib_file /etc/mibs/prx300_1V.ini
    fw_setenv 8311_mib_file /etc/mibs/prx300_1V.ini
 
