@@ -207,10 +207,7 @@ If you don’t have a switch or the switch is not linking with your WAS-110, a m
 Check for issues on the WAS-110 by running the command below and ensuring that it returns nothing:
 
 ```shell
-VOLS="kernelA bootcoreA rootfsA kernelB bootcoreB rootfsB rootfs_data ptconf" ; i=0; for VOL in $VOLS; do
-VOLID=$(ubinfo /dev/ubi0 -N "$VOL" 2>/dev/null | grep 'Volume ID:' | awk '{print $3}'); [ -z "$VOLID" ] && echo
-"Volume $VOL missing" || [ "$VOLID" -eq "$i" ] 2>/dev/null || echo "Volume $VOL misplaced (should be ID $i, not
-$VOLID)"; i=$((i+1)); done
+VOLS="kernelA bootcoreA rootfsA kernelB bootcoreB rootfsB rootfs_data ptconf" ; i=0; for VOL in $VOLS; do VOLID=$(ubinfo /dev/ubi0 -N "$VOL" 2>/dev/null | grep 'Volume ID:' | awk '{print $3}'); [ -z "$VOLID" ] && echo "Volume $VOL missing" || [ "$VOLID" -eq "$i" ] 2>/dev/null || echo "Volume $VOL misplaced (should be ID $i, not $VOLID)"; i=$((i+1)); done
 ```
 
 <!-- was-110-checking-for-issues.png -->
