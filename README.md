@@ -59,7 +59,7 @@ Special thanks:
   - Original author for the Sagemcom XOM API CLI
 - djGrrr ([Github](https://github.com/djGrrr))
   - Original author for the WAS-110 custom firmware
-  - The latest custom firmware can be found over at the 8311 Discord Community ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692))
+  - The latest custom firmware can be found over at djGrrr's Github releases page ([link](https://github.com/djGrrr/8311-was-110-firmware-builder/releases/latest))
 - Miguel R.
   - Trusted distributor of the WAS-110 module
 
@@ -294,7 +294,7 @@ You need to know if you're on PPTP or VEIP. Check up-n-atom's guide on Discord (
 # Upgrading the WAS-110 to Custom Firmware
 
 1. Ensure no issues are coming up with the WAS-110 (see [here](#checking-for-was-110-issues))
-2. Download the latest firmware from the 8311 Discord Server ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692))
+2. Download the latest firmware from djGrrr's Github releases page ([link](https://github.com/djGrrr/8311-was-110-firmware-builder/releases/latest))
 3. Extract `local-upgrade.img` from the archive file you just downloaded
 4. On the WAS-110’s WEB UI:
 
@@ -368,7 +368,7 @@ The WAS-110 asserts RX_LOS which some switches (e.g. Mikrotik) monitor to establ
 
 ## Downloading the Custom Firmware
 
-The latest custom firmware by djGrrr for the WAS-110 can be obtained from the 8311 Discord Community ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692)).
+The latest WAS-110 custom firmware can be obtained from djGrrr's github releases ([link](https://github.com/djGrrr/8311-was-110-firmware-builder/releases/latest)).
 
 ## WAS-110 Group Buy
 
