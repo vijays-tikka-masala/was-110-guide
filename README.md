@@ -50,7 +50,7 @@ liability, claims, or damages that may arise in connection with the use of the i
 
 # Credits
 
-None of this would’ve been possible if it wasn’t for the hard-working individuals over at the 8311 Discord Community ([link](https://discord.com/servers/8311-886329492438671420)).
+None of this would’ve been possible if it wasn’t for the hard-working individuals over at the 8311 Discord Community ([link](https://discord.com/channels/886329492438671420/1162279893388759122)).
 
 Special thanks:
 
@@ -215,13 +215,13 @@ VOLS="kernelA bootcoreA rootfsA kernelB bootcoreB rootfsB rootfs_data ptconf" ; 
     <img src="./doc-assets/images/was-110-checking-for-issues.png" alt="WAS-110 Checking for Issues" width="50%"/>
 </a>
 
-If you run into issues, seek support from the 8311 Discord community ([link](https://discord.com/channels/886329492438671420/1173846818535247904/1173846818535247904)).
+If you run into issues, seek support from the 8311 Discord community ([link](https://discord.com/channels/886329492438671420/1005613971371475035)).
 
 # Setting WAS-110 Firmware Variables
 
 ## PPTP or VEIP
 
-You need to know if you're on PPTP or VEIP. Check up-n-atom's guide on Discord ([link](https://discord.com/channels/886329492438671420/1162279893388759122/1178570504496496692)).
+You need to know if you're on PPTP or VEIP. Check up-n-atom's guide on Discord ([link](https://discord.com/channels/886329492438671420/1173846818535247904)).
 
 ## Applying the Variables
 
